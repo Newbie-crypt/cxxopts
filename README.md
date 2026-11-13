@@ -70,7 +70,7 @@ cxxopts::Options options("MyProgram", "One line description of MyProgram");
 Then use `add_options`.
 
 ```cpp
-options.add_options()
+options.add_options(
   ("d,debug", "Enable debugging") // a bool parameter
   ("i,integer", "Int param", cxxopts::value<int>())
   ("f,file", "File name", cxxopts::value<std::string>())
